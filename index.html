@@ -19,6 +19,9 @@
               <p className='sub-title'>
                 an interactive flashcard app.
               </p>
+              <div className="card-list">
+                {Card()}
+              </div>
             </div>
           );
         };
@@ -26,6 +29,14 @@
         var Card = function() {
           return (
             <div className='Card -front'>
+              <div className="front">
+                <h3 className='question'>
+                  you may know that React was created at __________.
+                </h3>
+                <p className='hint'>
+                  <span>Hint:</span> this company's site is known for being written in PHP
+                </p>
+              </div>
             </div>
           );
         };
